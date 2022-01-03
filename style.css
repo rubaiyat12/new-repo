@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: 0;
+    font-weight:400;
+}
+html{
+    scroll-behavior: smooth;
+    background-color: #fafafa;
+    /*font-family: 'Italianno', cursive;*/
+   font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #fff;
+    width: 1000px;
+    max-width: 100%;
+    margin:auto;
+    
+}
+/*common code*/
+.text-justfy{
+    text-align: justify;
+}
+
+
+/*common code*/
+.menu{
+    
+    color: #fff;
+    z-index: 10;
+    
+}
+.menu ul{
+    background: black;
+    overflow: hidden;
+    transition: all 0.2s;
+    }
+    .menu ul li{
+        float: left;
+        list-style-type:none;
+        margin: 7px;
+        padding: 7px;
+        
+        }
+        .menu ul li a{
+            text-decoration: none;
+            color:#fafafa;
+        
+        }
+        .menu ul li:hover{
+            background-color: blue;
+            border-radius: 4px;
+
+        }
+
+
+        /*banner section*/
+    .banner-section{
+        padding: 40px 18px ;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        min-height: 95vh;
+
+    }
+    .banner-section article{
+        flex-basis: 50%;
+        margin: 10px;
+
+    }
+    .banner-heading{
+        display: inline-block;
+        padding: 7px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        background-color: black;
+        color: #fafafa;
+    }
+    .banner-description{
+        font-size:17px;
+
+    }
+    .banner-section aside{
+        flex-basis: 50%;
+        text-align: center;
+
+    }
+
+    .banner-img{
+        width: 550px;
+        height: 550px;
+        border: 2px solid;
+        border-radius: 4px;
+    }
+
+    /* blog-about section */
+
+    .blog-about{
+        min-height: 950px;
+        background-color: #4c4c4c;
+        padding: 50px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        /*resposive*/
+
+   
+    @media(max-width:992px) {
+        .banner-section{
+            display: flex;
+            flex-direction: column;
+        }
+        
+    }
+    @media(max-width:768px){
+
+
+    }
+    @media(max-width:600px){
+        html{
+            font-size: 48.5%;
+        }
+       
+        nav ul{
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        nav ul li{
+            display: block;
+            margin-right: 0;
+            margin:10px 0;
+        }
+        
+    }
+    @media(max-width:400px){
+        
+    }
+    
+
+
+  
